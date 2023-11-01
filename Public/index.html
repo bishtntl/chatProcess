@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/87ebf30ca2.js" crossorigin="anonymous"></script>
+    <title>Chat App</title>
+</head>
+<body>
+    <h1 class="title">Chat Application</h1>
+    <div class="parent">
+        <div class=""name>
+            <span> &nbsp; <i class="fa-solid fa-user"></i></span>
+            <input type="text" id="name-input" class="inputData" value="UserName"  maxlength="20" >
+        </div>
+        <ul class="message-container" id="message-container">
+            <li class="leftMsg">
+                <p class="message">
+                 
+                    <span>hii</span>
+                </p>
+            </li>
+            <li class="Msg_right">
+                <p class="message">
+                   
+                    <span>hello how are you</span>
+                </p>
+            </li>
+            <li class="message-feedback">
+                <p class="feedback" id="feedback">
+                    type msg............
+                </p>
+            </li>
+        </ul>
+        <form  class="message-form" id="message-form">
+            <input type="text" name="message-input" class="inputMsg" id="message-input" placeholder="Write Message...." />
+            <div class="v-divider"></div>
+            <button type="submit" class="btnSend">send
+                <span><i class="fa-solid fa-paper-plane"></i></span>
+            </button>
+        </form>
+    </div>
+    <h3 class="clients-total" id="clients-total">Number of Members:</h3>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

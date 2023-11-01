@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBEBEB;
+}
+.title{
+    margin:20px 10px;
+}
+.parent{
+    border:8px solid #DDDDDD;
+    border-radius:5%;
+    overflow: hidden;
+}
+.name{
+    display: flex;
+    font-size:32px;
+    font-weight: 300;
+    padding: 8px 16px;
+    color:#7e7e7e;
+    background-color: #df9235;
+}
+.name > span{
+    color:#bbb;
+}
+.inputData{
+    font-size:24px;
+    font-weight: bold;
+    color:#7e7e7e;
+    border:none;
+    margin:0px 12px;
+    outline: none;
+    background-color: #8a968d;
+}
+.message-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #a8d6df;
+    width:400px;
+    height:400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.leftMsg , .Msg_right{
+    list-style:none ;
+    padding:8px 12px;
+    margin:12px;
+    max-width: 250px;
+    font-family: 18px;
+    word-wrap: break-word;
+}
+.leftMsg{
+    border-radius:15% 1% 15% 0;
+    align-self: flex-start;
+    background-color:rgb(203, 99, 123) ;
+    box-shadow: -2px 2px 4px gray;
+}
+.Msg_right{
+    border-radius:15% 1% 15% 0;
+    align-self: flex-end;
+    background-color:rgb(117, 108, 190) ;
+    box-shadow: 2px 2px 4px gray;
+}
+.leftMsg> p > span ,.Msg_right > p > span{
+    display:block;
+    font-style:italic;
+    font-size: 12px;
+    margin-top:4px;
+}
+.feedback{
+    font-size: 14px;
+    font-style: italic;
+    padding:0px 16px 16px 16px;
+    color:#2d2d2d;
+    text-align: center;
+}
+.message-form{
+    display: flex;
+    justify-content:space-between;
+    width:400px;
+}
+.inputMsg{
+    flex-grow:1;
+    height:48px;
+    font-size:16px;
+    border:none;
+    outline:none;
+    padding:0 12px;
+    background-color: #db3bab7b;
+}
+.btnSend{
+    height: 48px;
+    font-size: 16px;
+    border:none;
+    padding:0px 20px;
+    outline:none;
+    background-color:rgb(230, 140, 38);
+    cursor:pointer;
+}
+.v-divider{
+    height: 48px;
+    width:2px;
+    background-color:#a65ae0 ;
+}
+.clients-total{
+    margin:20px 0px;
+    color:#7e7e7e;
+    text-align: center;
+}
