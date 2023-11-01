@@ -9,7 +9,7 @@ msgForm.addEventListener('submit',(e)=>{
     sendMessage();
 })
 socket.on('clients',(data)=>{
-    clientTotal.innerText = `Clients: ${data}`
+    clientTotal.innerText = `clients: ${data}`
     console.log(data);
 })
 function sendMessage(){
