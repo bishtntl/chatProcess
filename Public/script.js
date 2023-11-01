@@ -33,7 +33,7 @@ socket.on('chat-message',(data)=>{
 function addMessageToUI(isOwnMsg,data)
 {
     const element =`
-    <li class='${isOwnMsg ? "message-right" : "message-left" }'>
+    <li class='${isOwnMsg ? "Msg_right" : "leftMsg" }'>
     <p class="message">
         ${data.message}
         <span>${data.name} :white_circle: ${moment(data.dateTime).fromNow()} </span>
