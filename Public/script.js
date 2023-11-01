@@ -8,8 +8,8 @@ msgForm.addEventListener('submit',(e)=>{
     e.preventDefault();
     sendMessage();
 })
-socket.on('clients-total',(data)=>{
-    clientTotal.innerText = `Total Clients: ${data}`
+socket.on('clients',(data)=>{
+    clientTotal.innerText = `Clients: ${data}`
     console.log(data);
 })
 function sendMessage(){
